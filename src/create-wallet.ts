@@ -1,3 +1,9 @@
+/**
+ * Author: haoqian
+ * Twitter: @huhaoqain
+ * wechat: jazzshow_
+ * Date: 2023/05/17
+ */
 import { Ed25519Keypair } from "@mysten/sui.js";
 import fs from "fs";
 

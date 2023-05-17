@@ -1,3 +1,8 @@
+- Author: haoqian
+- Twitter: @huhaoqain
+- wechat: jazzshow\_
+- Date: 2023/05/17
+
 ### 安装依赖库
 
 npm install
