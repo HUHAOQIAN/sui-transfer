@@ -67,21 +67,21 @@ async function batchTransferSui() {
   }
 }
 
-async function main() {
-  const suiAccounts = JSON.parse(
-    fs.readFileSync("constants/sui-addresses.json", "utf-8")
-  );
-  const amount = await getSuiBalance(
-    "0xbc3055198c89d4476e012c91d5582ab55ea2b39791d2994fcb4d2d2c4646020f"
-  );
-  const gas = 4000000;
-  console.log(amount);
-  await transferSui(
-    suiAccounts[0]["privateKey"],
-    suiAccounts[1]["address"],
-    amount - gas
-  );
-}
+// async function main() {
+//   const suiAccounts = JSON.parse(
+//     fs.readFileSync("constants/sui-addresses.json", "utf-8")
+//   );
+//   const amount = await getSuiBalance(
+//     "0xbc3055198c89d4476e012c91d5582ab55ea2b39791d2994fcb4d2d2c4646020f"
+//   );
+//   const gas = 4000000;
+//   console.log(amount);
+//   await transferSui(
+//     suiAccounts[0]["privateKey"],
+//     suiAccounts[1]["address"],
+//     amount - gas
+//   );
+// }
 batchTransferSui();
 // getSuiBalance(
 //   "0xbc3055198c89d4476e012c91d5582ab55ea2b39791d2994fcb4d2d2c4646020f"
