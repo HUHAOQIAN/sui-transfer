@@ -1,0 +1,29 @@
+import { RequestParamsLike } from 'jayson';
+interface RPCErrorRequest {
+    method: string;
+    args: RequestParamsLike;
+}
+export declare class RPCError extends Error {
+    req: RPCErrorRequest;
+    code?: unknown;
+    data?: unknown;
+    constructor(options: {
+        req: RPCErrorRequest;
+        code?: unknown;
+        data?: unknown;
+        cause?: Error;
+    });
+}
+export declare class RPCValidationError extends Error {
+    req: RPCErrorRequest;
+    result?: unknown;
+    constructor(options: {
+        req: RPCErrorRequest;
+        result?: unknown;
+        cause?: Error;
+    });
+    toString(): string;
+}
+export declare class FaucetRateLimitError extends Error {
+}
+export {};
